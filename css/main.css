@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+/*
+font-family: 'Dancing Script', cursive;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../images/bg.png') repeat top left;
+    font-family: 'Lato', sans-serif;
+}
+
+.hide{
+    display: none !important;
+}
+
+.container{
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.container-select{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+select{
+    padding: 0.5rem 1rem;
+    text-align: left;
+    border: 1px solid #eeecec;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+select:focus{
+    outline: none;
+}
+
+.grid-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    max-width: 875px;
+    margin: 0 auto;
+}
+
+.items h3{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+strong.active{
+    background: #91dbbc;
+    color: #FFF;
+    padding: 0.2rem 0.6rem;
+    display: inline-block;
+    font-size: 1rem;
+}
+
+.items span{
+    border: 1px solid #eeecec;
+    background: #FFF;
+    padding: 0.6rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.items span.active{
+    background: #91dbbc;
+    color: #FFF;
+}
+
+#selecionar{
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    background: #333;
+    color: #FFF;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
